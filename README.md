@@ -40,14 +40,14 @@ SELECT CASE WHEN NULL=5 THEN 'A'
 
 ```
 SELECT sum(t.1 value)
-        FROM(SELECT NULL : INTEGER AS value) AS t1;
+      FROM(SELECT NULL : INTEGER AS value) AS t1;
 ```
 
 3. Какое значение будет возвращено?
 
 ```
 SELECT 1+1 AS value
-    WHERE 1=1 AND 2=1;
+      WHERE 1=1 AND 2=1;
 ```
 
 4. Какое значение будет возвращено?
