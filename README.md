@@ -4,10 +4,10 @@
 
 ## Contents
 
-1. [Questions](#questions)
-2. [Requests](#requests)
+1. [Chapter I](#chapter-i)
+2. [Chapter II](#chapter-ii)
 
-# Questions
+# Chapter I
 
 1. Что такое атрибуты в ER-модели? — Характеристики сущности
 2. Какой из языков использовался для описания логических моделей данных? — SQL
@@ -25,7 +25,7 @@
 14. Что означает аббревиатура CAP в контексте CAP-теоремы? — Consistency Availability Partition tolerance
 15. Какой принцип ACID гарантирует, что если транзакция прошла успешно, изменения будут сохранены даже в случае сбоя системы? — Атомарность
 
-# Requests
+# Chapter II
 
 1. Какое значение будет возвращено?
 
