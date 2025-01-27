@@ -29,7 +29,7 @@
 
 1. Какое значение будет возвращено?
 
-```
+```sql
 SELECT CASE WHEN NULL=5 THEN 'A'
             WHEN NULL <>5 THEN 'B'
                 ELSE 'e'
@@ -38,21 +38,21 @@ SELECT CASE WHEN NULL=5 THEN 'A'
 
 2. Какое значение будет возвращено?
 
-```
+```sql
 SELECT sum(t.1 value)
       FROM(SELECT NULL : INTEGER AS value) AS t1;
 ```
 
 3. Какое значение будет возвращено?
 
-```
+```sql
 SELECT 1+1 AS value
       WHERE 1=1 AND 2=1;
 ```
 
 4. Какое значение будет возвращено?
 
-```
+```sql
 SELECT COUNT(*)
       FROM student AS s
     WHERE EXISTS(SELECT NULL FROM NovSU AS h WHERE h.stud_id=s.id LIMIT 1);
@@ -60,7 +60,7 @@ SELECT COUNT(*)
 
 5. Какое значение будет возвращено?
 
-```
+```sql
 SELECT COUNT(*)
       FROM student AS s
     WHERE id IN(SELECT * FROM NovSU);
