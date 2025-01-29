@@ -40,7 +40,7 @@ SELECT CASE WHEN NULL=5 THEN 'A'
 
 ```sql
 SELECT sum(t.1 value)
-      FROM(SELECT NULL : INTEGER AS value) AS t1;
+      FROM(SELECT NULL INTEGER AS value) AS t1;
 ```
 
 3. Какое значение будет возвращено?
@@ -54,14 +54,21 @@ SELECT 1+1 AS value
 
 ```sql
 SELECT COUNT(*)
-      FROM student AS s
-    WHERE EXISTS(SELECT NULL FROM NovSU AS h WHERE h.stud_id=s.id LIMIT 1);
+      FROM Student AS s
+    WHERE EXISTS(SELECT NULL FROM Hobby AS h WHERE h.stud_id=s.id LIMIT 1);
 ```
 
 5. Какое значение будет возвращено?
 
 ```sql
 SELECT COUNT(*)
-      FROM student AS s
-    WHERE id IN(SELECT * FROM NovSU);
+      FROM Student AS s
+    WHERE id IN(SELECT * FROM Hobby);
+```
+
+6. Какое значение будет возвращено?
+
+```sql
+SELECT reg_num
+      FROM Student ORDER BY reg_num NULLS LAST LIMIT 1;
 ```
