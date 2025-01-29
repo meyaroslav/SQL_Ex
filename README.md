@@ -27,7 +27,7 @@
 
 # Chapter II
 
-1. Какое значение будет возвращено?
+1. Какое значение будет возвращено? — `'e'`
 
 ```sql
 SELECT CASE WHEN NULL=5 THEN 'A'
@@ -36,21 +36,21 @@ SELECT CASE WHEN NULL=5 THEN 'A'
             END AS result;
 ```
 
-2. Какое значение будет возвращено?
+2. Какое значение будет возвращено? — Синтаксическая ошибка
 
 ```sql
 SELECT sum(t.1 value)
       FROM(SELECT NULL INTEGER AS value) AS t1;
 ```
 
-3. Какое значение будет возвращено?
+3. Какое значение будет возвращено? — Ни одной строки
 
 ```sql
 SELECT 1+1 AS value
       WHERE 1=1 AND 2=1;
 ```
 
-4. Какое значение будет возвращено?
+4. Какое значение будет возвращено? — 2
 
 ```sql
 SELECT COUNT(*)
@@ -58,7 +58,7 @@ SELECT COUNT(*)
     WHERE EXISTS(SELECT NULL FROM Hobby AS h WHERE h.stud_id=s.id LIMIT 1);
 ```
 
-5. Какое значение будет возвращено?
+5. Какое значение будет возвращено? — Синтаксическая ошибка
 
 ```sql
 SELECT COUNT(*)
@@ -66,7 +66,7 @@ SELECT COUNT(*)
     WHERE id IN(SELECT * FROM Hobby);
 ```
 
-6. Какое значение будет возвращено?
+6. Какое значение будет возвращено? — 123
 
 ```sql
 SELECT reg_num
